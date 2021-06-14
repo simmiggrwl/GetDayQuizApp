@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/question"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView android:id="@+id/lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="224dp"
+        android:textColor="@color/white"
+        android:text="YOU LOST!"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/finalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="128dp"
+        android:layout_below="@id/lost"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:text="Your Score:"
+         />
+
+    <TextView android:id="@+id/finalscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/finalscore"
+        android:textSize="25sp"
+        android:layout_below="@id/lost"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@color/white"
+        android:text="00"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN!"
+        android:layout_below="@id/finalscore"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
